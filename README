@@ -1,0 +1,112 @@
+# 🏥 Skin Disease Chatbot
+
+This is a **multimodal chatbot** that predicts **skin diseases** using **text, images, and audio inputs**.  
+It utilizes **Deep Learning (PyTorch)** for image classification and **Google Gemini AI** for text/audio-based diagnosis.
+
+---
+
+## **📌 Features**
+✅ **Image Analysis** – Upload a skin image for disease prediction  
+✅ **Text Diagnosis** – Describe symptoms in text for AI-based diagnosis  
+✅ **Voice Input** – Record audio and get a disease prediction  
+✅ **Streamlit Web Interface** – User-friendly chatbot UI  
+
+---
+
+## **📌 Setup Instructions**
+### **1️⃣ Install Dependencies**
+Ensure you have **Python 3.11+** installed.  
+Run the following command to install all required packages:
+```bash
+pip install -r requirements.txt
+```
+
+If you face any issues with audio recording, manually install:
+```bash
+pip install streamlit-webrtc
+```
+
+---
+
+### **2️⃣ Place Trained Models**
+Download your trained model files (`.pth`) and place them inside:  
+```
+SkinDiseaseChatbot/
+│── trained_models/
+│   │── resnet50.pth
+│   │── efficientnet_b3.pth
+│   │── densenet121.pth
+```
+
+---
+
+### **3️⃣ Run the Chatbot**
+Start the chatbot using:
+```bash
+streamlit run app.py
+```
+This will open the chatbot in your browser.
+
+---
+
+## **📌 Technologies Used**
+- **Python 3.11**
+- **PyTorch** (Deep Learning for image classification)
+- **Google Gemini AI** (For text & audio-based predictions)
+- **Streamlit** (Web UI)
+- **streamlit-webrtc** (For voice recording)
+- **Pillow** (Image processing)
+- **NumPy** (Data handling)
+
+---
+
+## **📌 How to Use the Chatbot**
+1️⃣ **Select Input Type**:  
+   - **Text** – Describe your symptoms in text.  
+   - **Image** – Upload a photo of your skin condition.  
+   - **Audio** – Record your voice describing symptoms.  
+
+2️⃣ **Chatbot Provides a Diagnosis**  
+   - If **image** is uploaded → AI model predicts disease.  
+   - If **text/audio** is used → Gemini AI analyzes and responds.  
+
+3️⃣ **Get a Treatment Suggestion**  
+   - The chatbot suggests a basic medical response.  
+
+---
+
+## **📌 Folder Structure**
+```
+SkinDiseaseChatbot/
+│── trained_models/        # ✅ Store trained .pth models here
+│   │── resnet50.pth
+│   │── efficientnet_b3.pth
+│   │── densenet121.pth
+│── app.py                 # ✅ Main Streamlit chatbot
+│── requirements.txt       # ✅ Dependency list
+│── README.md              # ✅ This file
+```
+
+---
+
+## **📌 Issues & Troubleshooting**
+### **1️⃣ Python Not Found?**
+Ensure **Python 3.11** is installed and added to **PATH**.  
+Check with:
+```bash
+python --version
+```
+If not recognized, **reinstall Python** from [python.org](https://www.python.org/downloads/).
+
+### **2️⃣ `torch` Not Installing?**
+Manually install PyTorch with:
+```bash
+pip install torch torchvision torchaudio
+```
+
+### **3️⃣ `streamlit-webrtc` Not Found?**
+Ensure it's installed with:
+```bash
+pip install streamlit-webrtc
+```
+

@@ -1,0 +1,12 @@
+streamlit==1.32.0
+torch==2.1.0
+torchvision==0.16.0
+datasets==2.18.0
+google-generativeai==0.1.0rc1
+pillow==10.2.0
+numpy==1.24.4
+soundfile==0.12.1
+streamlit-webrtc==0.46.0
+openai-whisper==20240930
+python-dotenv==1.0.1
+
